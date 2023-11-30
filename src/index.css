@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sriracha&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .input {
+    @apply border border-gray-400 w-full rounded-full py-[3px] outline-none px-4 focus:ring-1 focus:ring-inset focus:ring-blue-200;
+  }
+
+  .input-label {
+    @apply text-gray-700 block pb-1;
+  }
+
+  .transition-200 {
+    @apply transition duration-200 ease-in-out;
+  }
+}
+
+.disable-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
